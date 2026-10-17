@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Green Basket Fresh Mart – Groceries in Jayanagar, Bangalore</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Hind:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fbfcf7;--surface:#f1f5e9;--ink:#1d2b22;--muted:#5b6b60;--line:#dbe3d0;--green:#1b5e3a;--on-green:#fbfcf7;--sun:#f4b400;--on-sun:#1d2b22;--head:#fbfcf7;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#101a14;--surface:#16241c;--ink:#e9f2ec;--muted:#9bb0a3;--line:#26382d;--green:#2f8a58;--head:#101a14}}
+:root[data-theme="dark"]{--bg:#101a14;--surface:#16241c;--ink:#e9f2ec;--muted:#9bb0a3;--line:#26382d;--green:#2f8a58;--head:#101a14}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.55 "Hind",system-ui,sans-serif;padding-bottom:96px}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--head);z-index:30}
+h1,h2,h3{font-family:"Baloo 2",system-ui,sans-serif;line-height:1.1;margin:0}
+a{color:inherit}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--head);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{font:800 20px "Baloo 2",sans-serif;text-decoration:none;color:var(--green)}
+nav{display:flex;gap:18px;align-items:center;font-weight:500}
+nav a{text-decoration:none;font-size:15px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:0 22px;border-radius:999px;font:600 16px "Hind",sans-serif;text-decoration:none;border:2px solid transparent;cursor:pointer}
+.btn.sun{background:var(--sun);color:var(--on-sun)}
+.btn.line{border-color:currentColor;color:inherit;background:transparent}
+.btn.green{background:var(--green);color:var(--on-green)}
+.hero{background:var(--green);color:var(--on-green);overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:24px;align-items:center;padding-top:44px;padding-bottom:48px}
+.hero h1{font-size:clamp(38px,6.4vw,66px);font-weight:800;letter-spacing:-.01em}
+.hero p{font-size:18px;max-width:30ch;margin:16px 0 26px;opacity:.92}
+.hero .acts{display:flex;gap:12px;flex-wrap:wrap}
+.crate{justify-self:center;width:min(300px,100%);aspect-ratio:1;border-radius:50%;background:var(--sun);display:grid;grid-template-columns:repeat(3,1fr);place-items:center;font-size:clamp(34px,7vw,52px);padding:8%;transform:rotate(-6deg)}
+.perks{display:flex;flex-wrap:wrap;gap:10px 28px;padding:16px 0;font-weight:500;border-bottom:1px solid var(--line)}
+.perks span::before{content:"✓";color:var(--green);font-weight:700;margin-right:8px}
+section{padding:44px 0 8px}
+h2{font-size:clamp(28px,4vw,38px);font-weight:800;color:var(--green)}
+.sub{color:var(--muted);margin:6px 0 20px}
+.chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:6px;margin-bottom:8px;scrollbar-width:none}
+.chips button{flex:none;min-height:42px;padding:0 18px;border-radius:999px;border:1.5px solid var(--line);background:transparent;color:var(--ink);font:500 15px "Hind",sans-serif;cursor:pointer}
+.chips button.on{background:var(--green);border-color:var(--green);color:var(--on-green)}
+.list{display:grid;grid-template-columns:1fr 1fr;column-gap:40px}
+.item{display:grid;grid-template-columns:52px 1fr auto;gap:14px;align-items:center;padding:14px 0;border-bottom:1px solid var(--line)}
+.item .em{font-size:34px;text-align:center}
+.item h3{font-size:18px;font-weight:600}
+.item small{color:var(--muted);font-size:14px}
+.item .pr{font:800 18px "Baloo 2",sans-serif;display:block}
+.add{min-height:38px;padding:0 20px;border-radius:999px;border:2px solid var(--green);background:transparent;color:var(--green);font:600 15px "Hind",sans-serif;cursor:pointer}
+.step{display:inline-flex;align-items:center;background:var(--green);color:var(--on-green);border-radius:999px}
+.step button{width:38px;height:38px;border:0;background:transparent;color:inherit;font-size:20px;cursor:pointer}
+.step span{min-width:20px;text-align:center;font-weight:600}
+.right{text-align:right;display:grid;gap:6px;justify-items:end}
+.quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:20px}
+blockquote{margin:0;padding-left:16px;border-left:4px solid var(--sun)}
+blockquote p{margin:0 0 8px}
+blockquote cite{color:var(--muted);font-style:normal;font-size:14px}
+.visit{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start}
+.hours{margin:0;padding:0;list-style:none}
+.hours li{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--line)}
+.visit address{font-style:normal;margin-bottom:18px}
+footer{margin-top:48px;padding:28px 0;background:var(--surface);color:var(--muted);font-size:14px}
+#bar{position:fixed;left:0;right:0;bottom:0;z-index:40;background:var(--head);border-top:1px solid var(--line);padding:12px 20px calc(12px + env(safe-area-inset-bottom,0px));display:none}
+#bar.show{display:block}
+#bar .in{max-width:1040px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:14px}
+#bar b{font:800 18px "Baloo 2",sans-serif}
+@media (max-width:760px){
+nav a.hide{display:none}
+.hero .wrap{grid-template-columns:1fr;padding-top:32px}
+.crate{width:200px;order:-1;justify-self:start;margin-bottom:8px}
+.list{grid-template-columns:1fr}
+.quotes,.visit{grid-template-columns:1fr}
+}
+:focus-visible{outline:3px solid var(--sun);outline-offset:2px}
+</style>
+</head>
+<body>
+<header>
+<div class="wrap">
+<a class="logo" href="#top">Green Basket Fresh Mart</a>
+<nav><a class="hide" href="#shop">Shop</a><a class="hide" href="#visit">Visit us</a><a class="btn green" style="min-height:40px;padding:0 16px" href="tel:+919876543210">Call</a></nav>
+</div>
+</header>
+
+<main id="top">
+<div class="hero">
+<div class="wrap">
+<div>
+<h1>Fresh groceries at your door in 45 minutes.</h1>
+<p>Vegetables, fruits, milk and daily staples from our store in Jayanagar.</p>
+<div class="acts">
+<a class="btn sun" href="https://wa.me/919876543210?text=Hi%20Green%20Basket%2C%20I%20want%20to%20place%20an%20order." target="_blank" rel="noopener">Order on WhatsApp</a>
+<a class="btn line" href="#shop">Browse items</a>
+</div>
+</div>
+<div class="crate" aria-hidden="true"><span>🍅</span><span>🥬</span><span>🍌</span><span>🥛</span><span>🧅</span><span>🍎</span><span>🥚</span><span>🍞</span><span>🥕</span></div>
+</div>
+</div>
+
+<div class="wrap perks">
+<span>Free delivery above ₹299</span><span>Picked fresh every morning</span><span>Pay on delivery</span><span>Easy returns on damaged items</span>
+</div>
+
+<section id="shop">
+<div class="wrap">
+<h2>Today’s fresh picks</h2>
+<p class="sub">Tap Add, then send your list on WhatsApp. We confirm and deliver.</p>
+<div class="chips" id="chips">
+<button class="on" data-c="all">All</button><button data-c="veg">Vegetables</button><button data-c="fruit">Fruits</button><button data-c="dairy">Milk and eggs</button><button data-c="staple">Rice, dal and bread</button>
+</div>
+<div class="list" id="list"></div>
+</div>
+</section>
+
+<section>
+<div class="wrap">
+<h2>What our neighbours say</h2>
+<div class="quotes">
+<blockquote><p>The vegetables are always fresh, and the order reached me before I finished my tea.</p><cite>Priya S., Jayanagar 4th Block</cite></blockquote>
+<blockquote><p>Fair prices, and the delivery boy checks the items with you. I have stopped going to the market.</p><cite>Ramesh K., Jayanagar 3rd Block</cite></blockquote>
+<blockquote><p>I send my monthly list on WhatsApp and it arrives the same evening. Very easy.</p><cite>Anitha M., BTM Layout</cite></blockquote>
+</div>
+</div>
+</section>
+
+<section id="visit">
+<div class="wrap">
+<h2>Visit the store</h2>
+<p class="sub">Or call us, we are happy to help with your list.</p>
+<div class="visit">
+<div>
+<address>12, 5th Cross, Jayanagar 4th Block,<br>Bengaluru, Karnataka 560011<br>Phone: +91 98765 43210</address>
+<a class="btn green" href="https://www.google.com/maps/search/?api=1&amp;query=Jayanagar+4th+Block+Bengaluru" target="_blank" rel="noopener">Get directions</a>
+</div>
+<ul class="hours">
+<li><span>Monday to Saturday</span><span>6:30 AM to 10:00 PM</span></li>
+<li><span>Sunday</span><span>7:00 AM to 9:00 PM</span></li>
+<li><span>Delivery area</span><span>Within 5 km</span></li>
+</ul>
+</div>
+</div>
+</section>
+</main>
+
+<footer><div class="wrap">Green Basket Fresh Mart, Jayanagar 4th Block, Bengaluru. Sample website with placeholder details.</div></footer>
+
+<div id="bar"><div class="in"><div><b id="tot">₹0</b><br><small id="cnt" style="color:var(--muted)"></small></div><a class="btn sun" id="send" href="#" target="_blank" rel="noopener">Send order on WhatsApp</a></div></div>
+
+<script>
+var PH="919876543210";
+var P=[
+["tomato","🍅","Fresh tomatoes","1 kg",40,"veg"],
+["onion","🧅","Onions","1 kg",35,"veg"],
+["spinach","🥬","Spinach","1 bunch",20,"veg"],
+["carrot","🥕","Carrots","500 g",30,"veg"],
+["banana","🍌","Bananas","1 dozen",60,"fruit"],
+["apple","🍎","Apples","1 kg",180,"fruit"],
+["milk","🥛","Fresh milk","1 litre",54,"dairy"],
+["eggs","🥚","Eggs","1 dozen",78,"dairy"],
+["rice","🍚","Sona Masoori rice","5 kg",310,"staple"],
+["dal","🫘","Toor dal","1 kg",160,"staple"],
+["bread","🍞","Whole wheat bread","1 loaf",45,"staple"],
+["oil","🫒","Sunflower oil","1 litre",140,"staple"]
+];
+var cart={},cat="all";
+function draw(){
+ document.getElementById("list").innerHTML=P.filter(function(p){return cat==="all"||p[5]===cat}).map(function(p){
+  var q=cart[p[0]]||0;
+  var ctl=q?'<div class="step"><button aria-label="Remove one '+p[2]+'" onclick="chg(\''+p[0]+'\',-1)">−</button><span>'+q+'</span><button aria-label="Add one '+p[2]+'" onclick="chg(\''+p[0]+'\',1)">+</button></div>':'<button class="add" onclick="chg(\''+p[0]+'\',1)">Add</button>';
+  return '<div class="item"><div class="em">'+p[1]+'</div><div><h3>'+p[2]+'</h3><small>'+p[3]+'</small></div><div class="right"><span class="pr">₹'+p[4]+'</span>'+ctl+'</div></div>';
+ }).join("");
+}
+function chg(id,d){
+ cart[id]=Math.max(0,(cart[id]||0)+d);
+ if(!cart[id])delete cart[id];
+ draw();bar();
+}
+function bar(){
+ var n=0,t=0,lines=[];
+ P.forEach(function(p){var q=cart[p[0]];if(q){n+=q;t+=q*p[4];lines.push("- "+p[2]+" ("+p[3]+") x "+q)}});
+ var b=document.getElementById("bar");
+ b.className=n?"show":"";
+ document.getElementById("tot").textContent="₹"+t;
+ document.getElementById("cnt").textContent=n+(n===1?" item":" items")+(t>=299?", free delivery":", add ₹"+(299-t)+" for free delivery");
+ var msg="Hi Green Basket, I want to order:\n"+lines.join("\n")+"\nTotal: ₹"+t+"\nMy name and address: ";
+ document.getElementById("send").href="https://wa.me/"+PH+"?text="+encodeURIComponent(msg);
+}
+document.getElementById("chips").addEventListener("click",function(e){
+ var c=e.target.getAttribute("data-c");if(!c)return;
+ cat=c;
+ Array.prototype.forEach.call(this.children,function(x){x.className=x===e.target?"on":""});
+ draw();
+});
+draw();
+</script>
+</body>
+</html>
